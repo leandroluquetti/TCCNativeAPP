@@ -18,15 +18,7 @@
     [super viewDidLoad];
 }
 
-- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar{
-    return YES;
-}
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
-    
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
     return [_arrDadosTela count];
 }
 
@@ -38,6 +30,7 @@
     [cell.textLabel setText:[dictAddress objectForKey:@"detalhe"]];
     return cell;
 }
+
 - (IBAction)limparBusca:(id)sender {
     self.search.text=@"";
 }
