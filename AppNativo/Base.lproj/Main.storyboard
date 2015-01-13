@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAdress" textLabel="MJg-W9-qej" detailTextLabel="1kO-vh-4os" rowHeight="94" style="IBUITableViewCellStyleValue1" id="E08-jk-rgH">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAdress" textLabel="MJg-W9-qej" detailTextLabel="1kO-vh-4os" rowHeight="94" style="IBUITableViewCellStyleSubtitle" id="E08-jk-rgH">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E08-jk-rgH" id="yEC-3h-Lqv">
@@ -39,10 +39,10 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1kO-vh-4os">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1kO-vh-4os">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -72,10 +72,15 @@
                                 <action selector="limparBusca:" destination="WAq-3O-OAt" id="laP-6B-xle"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="yOF-Ps-Utd"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="yOF-Ps-Utd">
+                            <connections>
+                                <action selector="buscaEndereco:" destination="WAq-3O-OAt" id="e7h-Ir-ulu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="search" destination="Nxf-Zh-HiB" id="NBU-1V-woe"/>
+                        <outlet property="tbDados" destination="Npb-ul-a0h" id="ubg-By-qIk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84s-MF-Z85" userLabel="First Responder" sceneMemberID="firstResponder"/>
